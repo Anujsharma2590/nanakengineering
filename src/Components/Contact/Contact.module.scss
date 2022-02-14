@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Neucha&display=swap');
+$header-color: #e64b16;
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  border: 2px solid black;
+  .contactUsHeading {
+
+    margin-bottom: 30px;
+    text-align: center;
+    @media (min-width: 768px) {
+    width: 100%;
+}
+ h3 {
+    color: #e60012;
+    // font-family: 'Impact';
+    font-family: 'Bungee', cursive;
+    font-size: 50px;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+    line-height: 60px;
+    margin: 30px 0;
+}
+  }
+  .allContactRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 250px;
+    margin-right: 250px;
+    .contactContainerRow  {
+      
+   text-align: center;
+ 
+
+
+
+
+      .icon {
+        fill: #e60012 !important;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+    
+    
+    }
+    }
+
+  }
+  .contactMap {
+  }
+}
