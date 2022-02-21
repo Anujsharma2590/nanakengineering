@@ -5,13 +5,14 @@ import {
 	Route,
 
 } from 'react-router-dom';
-
+import MiddleSection from './MiddleSection'
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Section from "./Components/Section";
 import dummyText from "./DummyText";
 import About from './Components/About/About'
 import Contact from "./Components/Contact/Contact";
+import Map from './Components/Map'
 
 function App() {
 
@@ -24,13 +25,16 @@ function App() {
                  
                  <Route exact path='/about' element={< About />}></Route>
                  <Route exact path='/contact' element={< Contact />}></Route>
+                 <Route exact path='/map' element={< Map isMarkerShown />}></Route>
+
           </Routes>
         </Router>  */}
       
 
-      <Navbar />
+       <Navbar />
+       <MiddleSection />
        
-        <Section
+        {/* <Section
           title="HOME"
           subtitle={dummyText}
           dark={true}
@@ -56,12 +60,13 @@ function App() {
         />
         <Section
           title="CONTACT"
-          subtitle={dummyText}
+          subtitle={Contact}
           dark={true}
           id="section5"
         />
-        
-      </div>
+       */}
+       
+      </div> 
     );
   }
 
